@@ -1,5 +1,6 @@
 "use client";
 
+import { zhHansLocale } from "@sanity/locale-zh-hans";
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
@@ -23,5 +24,9 @@ export default defineConfig({
         ? actions.filter((action) => !["duplicate", "delete", "unpublish"].includes(action.action ?? ""))
         : actions,
   },
-  plugins: [structureTool({ structure }), visionTool({ defaultApiVersion: apiVersion })],
+  plugins: [
+    structureTool({ structure }),
+    visionTool({ defaultApiVersion: apiVersion }),
+    zhHansLocale({ title: "简体中文" }),
+  ],
 });
