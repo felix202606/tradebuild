@@ -1,26 +1,32 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Avenir Next", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif;
-  --font-serif: "Iowan Old Style", Palatino, "Palatino Linotype", "Songti SC", "Noto Serif SC", serif;
-  --color-paper: #f3efe6;
-  --color-ink: #1c1915;
-  --color-pine: #14382f;
-  --color-moss: #0f6e56;
-  --color-line: #e4ddd0;
-  --color-card: #fffcf7;
-  --color-clay: #8a3e24;
-  --color-muted: #3f3a34;
+  --font-sans: "Inter", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", ui-monospace, Menlo, monospace;
+  --color-bg: #06080c;
+  --color-surface: #0c1017;
+  --color-raised: #121823;
+  --color-line: #1d2531;
+  --color-fg: #e9eef4;
+  --color-muted: #93a1b1;
+  --color-lime: #b6f35c;
+  --color-lime-ink: #0b1200;
+  --color-teal: #4fd1c5;
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-pine);
+  outline: 2px solid var(--color-lime);
   outline-offset: 3px;
 }
 
 ::selection {
-  background: var(--color-pine);
-  color: var(--color-paper);
+  background: var(--color-lime);
+  color: var(--color-lime-ink);
 }
 
 summary {
@@ -29,4 +35,49 @@ summary {
 
 summary::-webkit-details-marker {
   display: none;
+}
+
+.grid-glow {
+  background-image:
+    radial-gradient(60% 50% at 70% 0%, rgb(182 243 92 / 0.14), transparent 70%),
+    radial-gradient(40% 40% at 0% 30%, rgb(79 209 197 / 0.1), transparent 70%),
+    linear-gradient(to right, rgb(255 255 255 / 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.035) 1px, transparent 1px);
+  background-size: auto, auto, 56px 56px, 56px 56px;
+}
+
+.prose-dark p {
+  margin-top: 1rem;
+  line-height: 1.9;
+  color: var(--color-muted);
+}
+
+.prose-dark h2 {
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-fg);
+}
+
+.prose-dark h3 {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-fg);
+}
+
+.prose-dark ul {
+  margin-top: 1rem;
+  list-style: disc;
+  padding-left: 1.25rem;
+  color: var(--color-muted);
+}
+
+.prose-dark li {
+  margin-top: 0.5rem;
+}
+
+.prose-dark a {
+  color: var(--color-lime);
+  text-decoration: underline;
 }

@@ -7,12 +7,18 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <main id="content" className="mx-auto max-w-3xl px-6 py-20">
-      <h1 className="font-serif text-4xl">页面不存在</h1>
-      <p className="mt-4 leading-8">这个地址没有对应的系统、机构或市场。从方案索引重新选择。</p>
-      <a href="/solutions" className="mt-6 inline-block text-pine underline">
-        查看全部方案
-      </a>
+    <main id="content" className="grid-glow flex min-h-dvh items-center">
+      <div className="mx-auto max-w-3xl px-6 py-20">
+        <p className="font-mono text-sm text-lime">404</p>
+        <h1 className="mt-4 text-4xl font-semibold">页面不存在</h1>
+        <p className="mt-4 leading-8 text-muted">这个地址没有对应的方案、机构或市场。</p>
+        <a
+          href="/solutions"
+          className="mt-8 inline-flex rounded-full bg-lime px-5 py-2.5 text-sm font-medium text-lime-ink"
+        >
+          查看全部方案
+        </a>
+      </div>
     </main>
   );
 }
