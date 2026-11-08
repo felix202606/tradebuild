@@ -10,7 +10,7 @@ import { structure } from "./sanity/structure";
 
 export default defineConfig({
   name: "tradebuild",
-  title: "tradebuild",
+  title: "内容后台",
   basePath: "/studio",
   projectId,
   dataset,

@@ -33,6 +33,13 @@ export function Header() {
         </nav>
         <div className="flex items-center gap-3">
           <a
+            href="/studio"
+            rel="nofollow"
+            className="rounded-full border border-lime/40 px-4 py-2 text-sm font-medium text-lime transition hover:bg-lime/10"
+          >
+            内容后台
+          </a>
+          <a
             href="/contact"
             className="hidden rounded-full bg-lime px-4 py-2 text-sm font-medium text-lime-ink transition hover:bg-lime/90 sm:inline-flex"
           >
@@ -49,6 +56,9 @@ export function Header() {
                   {link.label}
                 </a>
               ))}
+              <a href="/studio" rel="nofollow" className="block rounded-lg px-3 py-2 text-sm text-lime hover:bg-raised">
+                内容后台
+              </a>
               <a href="/contact" className="mt-1 block rounded-lg bg-lime px-3 py-2 text-sm font-medium text-lime-ink">
                 预约演示
               </a>
