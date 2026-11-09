@@ -39,7 +39,7 @@ export function aboutPage(): PageDoc {
       },
     ],
     related: [
-      { href: "/solutions", title: "按系统查看", note: "七类交付对象" },
+      { href: "/solutions", title: "按系统查看", note: "按系统进入交付说明" },
       { href: "/contact", title: "联系选型", note: EMAIL },
     ],
     crumbs: [home, { name: "关于", path: "/about" }],
@@ -123,7 +123,7 @@ export function faqPage(): PageDoc {
       },
     ],
     related: [
-      { href: "/solutions", title: "系统方案", note: "按七类系统进入" },
+      { href: "/solutions", title: "系统方案", note: "按系统进入" },
       { href: "/markets", title: "市场", note: "按监管机构进入" },
       { href: "/contact", title: "联系", note: EMAIL },
     ],

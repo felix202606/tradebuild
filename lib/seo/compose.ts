@@ -288,7 +288,7 @@ export function composeMarket(catalog: Catalog, market: Market): PageDoc {
     description: `在${market.name}交付交易系统，先核对${market.regulator}。${market.check}本页不是法律意见。`,
     h1: `${market.name}交易系统搭建`,
     kicker: market.regulator,
-    answer: `在${market.name}交付虚拟币、股票、期货、外汇、白标、钱包或电商系统之前，先核对${market.regulator}。${market.framework}${market.check}`,
+    answer: `在${market.name}交付${catalog.services.map((service) => service.name).join("、")}之前，先核对${market.regulator}。${market.framework}${market.check}`,
     queries: [
       `${market.name}交易系统搭建要看哪家监管机构`,
       `${market.name}虚拟币交易所系统牌照框架`,

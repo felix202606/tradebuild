@@ -1,6 +1,6 @@
 export const SITE = "https://tradebuild.dev";
 export const UPDATED = "2026-11-09";
-export const EMAIL = "hello@tradebuild.dev";
+export const EMAIL = "contact@tradebuild.dev";
 export const ORG_ID = `${SITE}/#organization`;
 export const WEBSITE_ID = `${SITE}/#website`;
 

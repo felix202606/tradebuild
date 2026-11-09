@@ -5,12 +5,10 @@ export function solutionsIndex(catalog: Catalog): PageDoc {
   return {
     path: "/solutions",
     title: "交易系统与白标方案 | tradebuild",
-    description:
-      "按虚拟币、股票、期货、外汇、白标、钱包和电商查看交付模块。每套系统再按机构类型和市场拆开。不是投资建议。",
+    description: `按${catalog.services.map((service) => service.name).join("、")}查看交付模块。每套系统再按机构类型和市场拆开。不是投资建议。`,
     h1: "按系统查看交付范围",
     kicker: "方案索引",
-    answer:
-      "tradebuild 把交付说明分成七类系统：虚拟币交易所、股票、期货、外汇、白标、钱包和电商。先选系统，再选机构类型和市场，才能对上模块和监管入口。",
+    answer: `tradebuild 把交付说明分成 ${catalog.services.length} 类系统：${catalog.services.map((service) => service.name).join("、")}。先选系统，再选机构类型和市场，才能对上模块和监管入口。`,
     queries: ["交易系统搭建包含哪些系统", "白标方案和交易所系统有什么差别", "如何按市场查看交付范围"],
     facts: [
       { label: "系统数", value: String(catalog.services.length) },

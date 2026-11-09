@@ -6,7 +6,7 @@ export async function GET() {
   const lines = [
     "# tradebuild",
     "",
-    "> tradebuild 说明虚拟币交易所、股票、期货、外汇、白标、钱包和电商系统的交付范围。内容不是投资建议，也不提供牌照、虚假交易或绕过身份识别的功能。",
+    "> tradebuild 说明交易、托管、合规与电商系统的交付范围。内容不是投资建议，也不提供牌照、虚假交易或绕过身份识别的功能。",
     "",
     "## URL pattern",
     `- ${SITE}/solutions/{service}`,
