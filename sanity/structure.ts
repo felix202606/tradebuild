@@ -3,9 +3,11 @@ import type { StructureResolver } from "sanity/structure";
 
 export const structure: StructureResolver = (S) =>
   S.list()
+    .id("root")
     .title("内容")
     .items([
       S.listItem()
+        .id("about")
         .title("关于我们")
         .icon(UsersIcon)
         .child(S.document().schemaType("aboutPage").documentId("aboutPage").title("关于我们")),
