@@ -15,8 +15,11 @@
 }
 
 html {
-  color-scheme: dark;
   scroll-behavior: smooth;
+}
+
+html:not(:has(#sanity)) {
+  color-scheme: dark;
 }
 
 :focus-visible {

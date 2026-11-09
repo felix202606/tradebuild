@@ -24,8 +24,10 @@ export default defineConfig({
         ? actions.filter((action) => !["duplicate", "delete", "unpublish"].includes(action.action ?? ""))
         : actions,
   },
+  releases: { enabled: false },
+  scheduledDrafts: { enabled: false },
   plugins: [
-    structureTool({ structure }),
+    structureTool({ title: "编辑内容", structure }),
     visionTool({ defaultApiVersion: apiVersion }),
     zhHansLocale({ title: "简体中文" }),
   ],

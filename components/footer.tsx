@@ -51,7 +51,6 @@ export async function Footer() {
             <li><a href="/contact" className="hover:text-fg">联系我们</a></li>
             <li><a href="/privacy" className="hover:text-fg">隐私政策</a></li>
             <li><a href="/terms" className="hover:text-fg">使用条款</a></li>
-            <li><a href="/studio" rel="nofollow" className="hover:text-fg">内容后台</a></li>
           </ul>
         </nav>
       </div>

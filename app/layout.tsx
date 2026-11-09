@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { SITE } from "@/lib/site";
-import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
@@ -26,7 +25,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="zh-CN">
-      <body className="min-h-dvh bg-bg font-sans text-fg antialiased">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

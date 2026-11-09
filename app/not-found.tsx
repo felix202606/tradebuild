@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "页面不存在 | tradebuild",
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <main id="content" className="grid-glow flex min-h-dvh items-center">
+    <main id="content" className="grid-glow flex min-h-dvh items-center bg-bg font-sans text-fg antialiased">
       <div className="mx-auto max-w-3xl px-6 py-20">
         <p className="font-mono text-sm text-lime">404</p>
         <h1 className="mt-4 text-4xl font-semibold">页面不存在</h1>
