@@ -9,12 +9,11 @@ const links = [
 export function Logo() {
   return (
     <a href="/" className="flex items-center gap-2.5 text-lg font-semibold tracking-tight">
-      <span className="grid size-8 place-items-center rounded-lg bg-lime text-lime-ink">
-        <svg viewBox="0 0 24 24" className="size-5" fill="none" stroke="currentColor" strokeWidth="2.4" aria-hidden="true">
-          <path d="M4 17 9.5 11l4 4L20 7" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
+      <img src="/logo-mark.png" alt="" width={40} height={40} className="h-10 w-10 object-contain" />
+      <span className="tracking-tight">
+        <span className="text-[#3ee0a0]">trade</span>
+        <span className="text-[#ff6a2b]">build</span>
       </span>
-      tradebuild
     </a>
   );
 }
